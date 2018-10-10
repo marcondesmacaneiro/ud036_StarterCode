@@ -1,6 +1,12 @@
 import media
 import fresh_tomatoes
 
+# criando as instâncias de Videos.
+# Passando 4 parâmetros
+# 1 - O título do filme
+# 2 - Uma breve descrição do Filme
+# 3 - Uma URL para a umagem do poster do filme
+# 4 - Uma URl para o trailler do filme no Youtube
 avatar = media.Movie("Avatar",
                      "A marine on an alien planet",
                      "https://upload.wikimedia.org/wikipedia/pt/b/b0/" +
@@ -28,5 +34,7 @@ venom = media.Movie("Venom",
                     "EOyeF00_yBwYzSg4_Nm9oWPNfRMJGviWb6hnLLW",
                     "https://www.youtube.com/watch?v=sVjQw8M_FSM")
 
+# Criando um array e adicionando todas as instâncias de filmes
+# criadas anteriormente
 movies = [avatar, star_wars, captain_marvel, venom]
 fresh_tomatoes.open_movies_page(movies)
